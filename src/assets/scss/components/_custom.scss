@@ -1,0 +1,295 @@
+/* global style*/
+h3 {
+  padding-bottom: 10px;
+}
+
+hr {
+  border-bottom: 1px solid $medium-gray;
+  display: block;
+  margin-bottom: 2.5rem;
+  width: 4rem;
+}
+/* top-bar nav */
+.top-bar {
+  color: $white;
+  font-size: 0.8rem;
+  width: 100%;
+
+  h4 {
+    font-size: 1.0rem;
+    padding: 3px 10px;
+    margin-top: 7px;
+    letter-spacing: 0.1px;
+  }
+
+  span {
+    color: lighten( $primary, 30% );
+    background: $dark-gray;
+    margin-right: 5px;
+  }
+
+  ul {
+    padding-right: 15px;
+  }
+
+  li {
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $white;
+  }
+
+  a:hover {
+    color: $medium-light-gray;
+    border-bottom: 1.0px solid $medium-light-gray;
+  }
+}
+/* mobile nav and off canvas */
+/* title bar */
+.title-bar-title {
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  padding: 10px 2px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.tblogo {
+  color: lighten( $primary, 30% );
+
+}
+/* off canvas heading */
+#off-canvas-nav-heading {
+  color: lighten( $primary, 30% );
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+#off-canvas-nav-subheading {
+  color: $white;
+  font-size: 0.8rem;
+}
+/* off canvas navigation */
+div.off-canvas-nav-list {
+  li {
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $white;
+    font-size: 0.9em;
+  }
+
+  a:hover {
+    background-color: lighten( $dark-gray, 3% );
+    color: lighten( $primary, 30% );
+  }
+}
+/* home callout section and showcase*/
+.callout.large.primary {
+  height: 450px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  color: $white;
+  margin-top: -2px;
+  min-height: 450px;
+
+  h1 {
+    color: black;
+  }
+}
+
+a.button.small {
+  margin: 5px;
+  padding: 8px 18px;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 1.25;
+  border-radius: 2px;
+  background-color: #EFBB20;
+  text-shadow: 0 0 4px #bf9004;
+  box-shadow: -3px -3px 5px $medium-gray;
+}
+/*showcase*/
+#showcase {
+  width: 100%;
+}
+/* who we are */
+#about {
+  padding: 60px 20px;
+}
+/* our services */
+#services {
+  padding: 60px 20px;
+}
+/* why us */
+.why-us {
+  background: $medium-light-gray;
+  padding: 60px 20px;
+}
+/* current projects */
+#current-p {
+  padding: 60px 0px;
+  background-color: $light-gray;
+
+}
+/* partners */
+/* meet our team */
+#team {
+  background: white;
+  padding: 60px 20px;
+}
+
+.thumbnail {
+  border:none;
+}
+
+/* contact */
+#contact {
+  background: white;
+  padding: 60px 2px 2px 0px;
+  background-color: $light-gray;
+}
+
+#contact-area {
+  padding: 0px 20px;
+}
+
+input.button.small {
+  padding: 8px 18px;
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 1.25;
+  border-radius: 2px;
+  background-color: #EFBB20;
+  text-shadow: 0 0 4px #bf9004;
+  box-shadow: -3px -3px 5px $medium-gray;
+}
+
+/* footer  */
+footer {
+  background: #2C353D;
+  color: white;
+  height: 200%;
+  padding: 40px 20px;
+
+  address {
+      font-style: normal;
+  }
+
+  ul {
+  list-style-type: none;
+  font-size: 0.9em;
+
+  }
+
+  .indent{
+    text-indent: 25px;
+  }
+  i.fa {
+    color: lighten( $primary, 30% );
+    padding-right: 5px;
+    font-size: 1.0em;
+  }
+  h5 {
+    font-size: 1.0em;
+  }
+  span {
+    color: lighten( $primary, 30% );
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
+
+/* gutter */
+.gutter {
+  background-color: $black;
+  color: white;
+  height: 50px;
+
+  h5 {
+    padding: 15px 0px;
+    font-size: 0.8em;
+    margin-left: 15px;
+    letter-spacing: 0.1px;
+    margin-bottom: -1px;
+  }
+
+  span {
+    color: lighten( $primary, 30% );
+  }
+}
+/*idea for mobile nav sticky*/
+.title-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-top: -10px;
+}
+
+/*Projects Pages*/
+/*Projects Hero Section*/
+section.project {
+  padding: 20px 20px;
+  background-color: $light-gray;
+
+  p {
+    font-size: 1.0rem;
+  }
+}
+
+section.project-name {
+  padding-top: 80px;
+}
+.hero-sectiona {
+  /*background: url('https://placehold.it/1130x400') 50% no-repeat;
+  background-size: cover;*/
+
+  background: url('../img/concrete1.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-sectionb {
+  background: url('../img/worksite_1.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-sectionc {
+  background: url('../img/concretepour.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-sectiond {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+
+/*project breadcrumbs*/
+.navbc {
+  padding-left: 20px;
+  .breadcrumbs {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+}
+/*project spec and overview*/
+.project-spec {
+  padding: 0px 10px;
+
+  .fa {
+    color: $primary;
+    padding-right: 5px;
+    font-size: 1.0em;
+  }
+}
+.project-overview {
+  padding: 0px 10px;
+}
