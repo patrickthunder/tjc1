@@ -35,3 +35,4 @@ PATHS:
   # TODO:  Rework this using webpack build. Right now just verifying the files are being built properly
   entries:
     - "src/assets/js/app.js"
+  

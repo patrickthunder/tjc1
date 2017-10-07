@@ -1,0 +1,18 @@
+/* gutter */
+.gutter {
+  background-color: $black;
+  color: white;
+  height: 50px;
+
+  h5 {
+    padding: 15px 0px;
+    font-size: 0.8em;
+    margin-left: 15px;
+    letter-spacing: 0.1px;
+    margin-bottom: -1px;
+  }
+
+  span {
+    color: lighten( $primary, 30% );
+  }
+}

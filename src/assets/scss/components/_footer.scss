@@ -1,0 +1,41 @@
+/* footer  */
+footer {
+  background: #2C353D;
+  color: white;
+  height: 200%;
+  padding: 40px 20px;
+
+  address {
+      font-style: normal;
+  }
+
+  ul {
+  list-style-type: none;
+  font-size: 0.9em;
+
+  }
+
+  i.fa.fa-map-marker {
+  font-size: 1.2em;
+  padding-right: 5px;
+  }
+
+  .indent{
+    text-indent: 20px;
+  }
+  i.fa {
+    color: lighten( $primary, 30% );
+    padding-right: 5px;
+    font-size: 1.0em;
+
+  }
+  h5 {
+    font-size: 1.0em;
+  }
+  span {
+    color: lighten( $primary, 30% );
+  }
+  p {
+    font-size: 0.8em;
+  }
+}

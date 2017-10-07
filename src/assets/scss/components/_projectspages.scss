@@ -1,0 +1,105 @@
+/*Projects Pages*/
+
+
+/* current projects Main Page */
+
+#current-p {
+  padding: 60px 0px;
+  background-color: $white;
+
+}
+
+
+/*Projects Hero Section On Individual Projects Pages*/
+section.project {
+  padding: 40px 25px;
+  background-color: $light-gray;
+
+  p {
+    font-size: 1.0rem;
+  }
+}
+
+section.project-name {
+  padding-top: 80px;
+}
+.hero-section-a {
+  background: url('../img/thevuehero.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-section-b {
+  background: url('../img/tc_hero.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-section-c {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-section-d {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-section-e {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+
+.hero-section-f {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+.hero-section-g {
+  background: url('../img/concretepour.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+
+.hero-section-h {
+  background: url('../img/concrete1.jpg') 50% no-repeat;
+  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  background-size: cover;
+  height: 400px;
+  padding: 20px;
+}
+
+/*project breadcrumbs*/
+.navbc {
+  padding-left: 20px;
+  .breadcrumbs {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+}
+/*project spec and overview*/
+.project-spec {
+  padding: 0px 10px;
+
+  .fa {
+    color: $primary;
+    padding-right: 5px;
+    font-size: 1.0em;
+  }
+}
+.project-overview {
+  padding: 0px 10px;
+}
+
+/*project gallery*/
