@@ -2,14 +2,14 @@
 .gutter {
   background-color: $black;
   color: white;
-  height: 50px;
+  height: rem-calc(50);
 
   h5 {
-    padding: 15px 0px;
-    font-size: 0.8em;
-    margin-left: 15px;
+    padding: rem-calc(15 2);
+    font-size: 0.9rem;
+    margin-left: rem-calc(15);
     letter-spacing: 0.1px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
   }
 
   span {

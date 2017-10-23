@@ -1,9 +1,11 @@
 /* footer  */
-footer {
+
+.site-footer {
   background: #2C353D;
   color: white;
   height: 200%;
-  padding: 40px 20px;
+  padding: rem-calc(40 20);
+
 
   address {
       font-style: normal;
@@ -11,31 +13,40 @@ footer {
 
   ul {
   list-style-type: none;
-  font-size: 0.9em;
+  font-size: 1.0rem;
 
+  @include breakpoint(small only) {
+    text-align: center;
+    font-size: 1.0rem;
+}
   }
 
   i.fa.fa-map-marker {
-  font-size: 1.2em;
-  padding-right: 5px;
+  font-size: 1.2rem;
+  padding-right: rem-calc(5);
   }
 
   .indent{
-    text-indent: 20px;
+    text-indent: rem-calc(20);
   }
   i.fa {
     color: lighten( $primary, 30% );
     padding-right: 5px;
-    font-size: 1.0em;
+    font-size: rem-calc(16);
 
   }
   h5 {
-    font-size: 1.0em;
+    font-size: rem-calc(18);
+    @include breakpoint(small only) {
+      text-align: center;
+      font-size: rem-calc(19);
+  }
+
   }
   span {
     color: lighten( $primary, 30% );
   }
   p {
-    font-size: 0.8em;
+    font-size: rem-calc(15);
   }
 }
