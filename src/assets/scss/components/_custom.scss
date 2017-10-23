@@ -1,3 +1,5 @@
+
+
 /* global style*/
 
 h3 {
@@ -165,9 +167,12 @@ a.button.small:hover {
 section.partners {
   background: $light-gray;
   padding: rem-calc(60 20);
+
 }
 
 /* meet our team */
+
+/* team section and thumbnail */
 #team {
   background: white;
   padding: rem-calc(60 20);
@@ -175,8 +180,9 @@ section.partners {
   div.media-object-section {
     padding: rem-calc(15);
   }
-}
 
-.thumbnail {
-  border:none;
+  .thumbnail {
+    border:none;
+  }
+
 }
