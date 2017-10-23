@@ -1,5 +1,5 @@
 /*Project Image Mouseover and Buttons*/
-.cptn03 {
+.main-gal {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -8,7 +8,7 @@
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-.cptn03 img {
+.main-gal img {
   width: 100%;
   left: 0;
   bottom: 0;
@@ -19,7 +19,7 @@
   transition: all 0.3s;
 }
 
-.cptn03 .cptn {
+.main-gal .cptn {
   background: $dark-gray;
   width: 100%;
   height: 25%;
@@ -34,12 +34,12 @@
   transition: all 0.3s;
 }
 
-.cptn03 .cptn div {
+.main-gal .cptn div {
   float: left;
   height: 100%;
 }
 
-.cptn03 .cptn .button {
+.main-gal .cptn .button {
   -wibkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -72,12 +72,12 @@
     color: black;
   }
 }
-.cptn03 .cptn .button:hover {
+.main-gal .cptn .button:hover {
     background-color: lighten( #EFBB20, 25% );
     transition: 0.3s ease-in-out;
     color: black;
 }
-.cptn03 .cptn h3 {
+.main-gal .cptn h3 {
   color: #fff;
   margin-top: rem-calc(6);
   margin-bottom: 0;
@@ -91,6 +91,6 @@
   }
 }
 
-.cptn03:hover .cptn {
+.main-gal:hover .cptn {
   bottom: 0;
 }

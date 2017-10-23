@@ -6,7 +6,7 @@
 }
 
 #contact-area {
-  padding: 0px 20px;
+  padding: rem-calc(0 20);
 }
 
 /* contact form area */
@@ -18,8 +18,8 @@
   box-shadow: none;
   border-bottom: 1.0px solid $primary-color;
   font-weight: 400;
-  padding: 8px 5px;
-  font-size: 1.1em;
+  padding: rem-calc(8 5);
+  font-size: 1.1rem;
 }
 
 .login-box-input:focus {
