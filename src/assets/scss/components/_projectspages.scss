@@ -1,19 +1,17 @@
 /*Projects Pages*/
 
-
 /* current projects Main Page */
 
 #current-p {
-  padding: 60px 0px;
+  padding: rem-calc(60 0);
   background-color: $white;
 
 }
 
-
 /*Projects Hero Section On Individual Projects Pages*/
 section.project {
-  padding: 40px 25px;
-  background-color: $light-gray;
+  padding: rem-calc(40 25);
+  background-color: $white;
 
   p {
     font-size: 1.0rem;
@@ -21,85 +19,94 @@ section.project {
 }
 
 section.project-name {
-  padding-top: 80px;
+  padding-top: rem-calc(80);
 }
 .hero-section-a {
   background: url('../img/thevuehero.jpg') 50% no-repeat;
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 .hero-section-b {
   background: url('../img/tc_hero.jpg') 50% no-repeat;
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 .hero-section-c {
   background: url('../img/cranenight.jpg') 50% no-repeat;
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 .hero-section-d {
   background: url('../img/cranenight.jpg') 50% no-repeat;
   /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 .hero-section-e {
   background: url('../img/cranenight.jpg') 50% no-repeat;
   /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 
 .hero-section-f {
   background: url('../img/cranenight.jpg') 50% no-repeat;
   /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 .hero-section-g {
   background: url('../img/concretepour.jpg') 50% no-repeat;
   /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 
 .hero-section-h {
   background: url('../img/concrete1.jpg') 50% no-repeat;
-  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
   background-size: cover;
-  height: 400px;
-  padding: 20px;
+  height: 60vh;
 }
 
 /*project breadcrumbs*/
 .navbc {
-  padding-left: 20px;
+  padding-left: rem-calc(20);
   .breadcrumbs {
     color: $black;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: rem-calc(11);
   }
 }
-/*project spec and overview*/
+/*project spec and icons and overview*/
 .project-spec {
-  padding: 0px 10px;
+  padding: rem-calc(0 10);
+  letter-spacing: 0.1px;
 
   .fa {
     color: $primary;
-    padding-right: 5px;
-    font-size: 1.0em;
+    padding-right: rem-calc(5);
+    font-size: 1.2rem;
   }
 }
 .project-overview {
-  padding: 0px 10px;
+  padding: rem-calc(0 10);
 }
 
-/*project gallery*/
+/*project galleries thumbnails flex box alignment*/
+.project-thumbs {
+  background-color: $white;
+  margin: rem-calc(0);
+
+  .cell {
+    padding: rem-calc(0);
+    @include breakpoint(large) {
+      @include flex;
+      @include flex-align(center, middle);
+      margin: rem-calc(15 0);
+    };
+
+    @include breakpoint(small) {
+      @include xy-grid-collapse();
+    };
+  }
+}

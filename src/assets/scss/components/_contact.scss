@@ -24,7 +24,7 @@
 
 .login-box-input:focus {
   color: $primary;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   box-shadow: none;
   border: 0;
   border-bottom: 2px solid $primary-color;
@@ -32,15 +32,17 @@
 
 input.button.expanded {
   margin-top: 8px;
-  font-size: .9em;
+  font-size: 0.9rem;
   line-height: 1.25;
   border-radius: 2px;
-  background-color: $primary;
+  background-color: #EFBB20;
   box-shadow: -3px -3px 5px $light-gray;
+  color: $light-gray;
+  font-weight: 450;
 }
 .button.expanded {
-  @include button(true, $light-gray, auto, auto, solid);
+  @include button(true, lighten(#EFBB20, 30%), auto, auto, solid);
   color: $light-gray;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: rem-calc(5);
 }
