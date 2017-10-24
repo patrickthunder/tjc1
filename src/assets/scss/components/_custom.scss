@@ -121,13 +121,15 @@ div.off-canvas-nav-list {
 
 a.button.small {
   margin: rem-calc(10);
-  padding: rem-calc(8 19);
-  font-weight: 450;
-  font-size: rem-calc(20);
+  padding: rem-calc(8 15);
+  font-weight: 500;
+  font-size: rem-calc(18);
+  letter-spacing: 0.5px;
   line-height: 1.25;
   border-radius: 2px;
   background-color: #EFBB20;
   box-shadow: -3px -3px 5px $medium-gray;
+  text-transform: uppercase;
 }
 
 /*CTA Buttons Hover*/
@@ -135,7 +137,7 @@ a.button.small:hover {
  background-color: lighten( #EFBB20, 20% );
  transition: 0.3s ease-in-out;
  color: black;
- font-size: rem-calc(20);
+ font-size: rem-calc(18);
 }
 
 
