@@ -15,6 +15,7 @@
     "foundation-sites": "~6.4.1",
     "jquery": "^3.2.1",
     "motion-ui": "~1.2.2",
+    "sweetalert2": "^6.11.1",
     "what-input": "^4.3.1"
   },
   "devDependencies": {
