@@ -1,10 +1,10 @@
-<!-- contact us -->
+<!-- contact us section -->
 
 <section id="contact" data-magellan-target="contact">
   <div class="medium-12 cell text-center">
     <h3 class="text-center">Contact Us</h3>
     <hr>
-    <h4>Tell us more about your next project</h4>
+      <h4>Tell us more about your next project</h4>
     <p>Providing proven expertise in structural concrete construction to Southern California</p>
     <br>
   </div>
@@ -22,22 +22,41 @@
       <h4 class="text-center">Let's build together</h4>
       <br>
 
-      <!-- form area -->
-      <label>
-        <input class="login-box-input" type="text" placeholder="Name">
+
+
+<!-- form area with abide-->
+<!-- form input area with ajax and php -->
+<form method="post" id="contact-form" data-abide novalidate>
+
+  <label>
+      <input class="login-box-input" type="text" placeholder="Name" required>
+        <span class="form-error">
+          Please include your name
+        </span>
       </label>
 
-      <label>
+  <label>
         <input class="login-box-input" type="text" placeholder="Company">
       </label>
-      <label>
-        <input class="login-box-input" type="text" placeholder="Email">
-      </label>
-      <label>
-        <textarea placeholder="What can we do for your project?"     class="login-box-input"></textarea>
+
+  <label>
+        <input class="login-box-input" type="text" placeholder="Email" required pattern="email">
+        <span class="form-error">
+          Please include a valid email address
+        </span>
       </label>
 
-      <input type="submit" class="button expanded" value="Submit Form">
-    </div>
-  </div>
+  <label>
+      <textarea placeholder="What can we do for your project?"     class="login-box-input" required></textarea>
+        <span class="form-error">
+          Please tell us about your project and how we can help
+        </span>
+      </label>
+
+  <input type="submit" class="button expanded" value="Submit Form">
+</form>
+
+
+</div>
+</div>
 </section>
