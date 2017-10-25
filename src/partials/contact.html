@@ -28,28 +28,28 @@
 <!-- form input area with ajax and php, id is event listener-->
 
 
-<form method="post" id="contact-form" data-abide novalidate>
+<form method="post" id="contact-form" action="assets/php/send.php" data-abide novalidate>
 
   <label>
-      <input class="login-box-input" type="text" placeholder="Name" required>
+      <input class="login-box-input" type="text" placeholder="Name" name="name" required>
         <span class="form-error">
           Please include your name
         </span>
       </label>
 
   <label>
-        <input class="login-box-input" type="text" placeholder="Company">
+        <input class="login-box-input" type="text" placeholder="Company" name="company">
       </label>
 
   <label>
-        <input class="login-box-input" type="text" placeholder="Email" required pattern="email">
+        <input class="login-box-input" type="text" placeholder="Email" name="email" required pattern="email">
         <span class="form-error">
           Please include a valid email address
         </span>
       </label>
 
   <label>
-      <textarea placeholder="What can we do for your project?"     class="login-box-input" required></textarea>
+      <textarea placeholder="What can we do for your project?" class="login-box-input" name="textarea" required></textarea>
         <span class="form-error">
           Please tell us about your project and how we can help
         </span>

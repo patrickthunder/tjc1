@@ -30,12 +30,25 @@ $('#contact-form')
   // form validation passed, form will submit if submit event not returned false
   .on("formvalid.zf.abide", function(ev,frm) {
     //add sweet alert function swal for successful validation
-    swal(
-      'Good Job',
-      'You sent the form!',
-      'success'
-    )
-    // ajax post form
+    var form = $(this);
+
+          // ajax post form
+      $.ajax({
+        type: form.attr('method'),
+        url: form.attr('action'),
+        data: form.serialize(),
+          success: function(data) {
+            var result = data;
+            var response = JSON.parse(result);
+              console.log(response);
+              swal(
+                  response.message,
+                  'Thank you,' + response.name + ' For your interest in TJC',
+                   'success'
+              );
+        }
+      })
+
   })
   // to prevent form from submitting upon successful validation
   .on("submit", function(ev) {
