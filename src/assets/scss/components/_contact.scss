@@ -1,7 +1,7 @@
 /* contact */
 #contact {
   background: white;
-  padding: 60px 2px 2px 0px;
+  padding: rem-calc(60 2 2 0);
   background-color: $light-gray;
 }
 
@@ -12,7 +12,7 @@
 /* contact form area */
 .login-box-input {
   margin-bottom: 1.25rem;
-  height: 2.5rem;
+  height: 2.6rem;
   border: 0;
   padding-left: 0;
   box-shadow: none;
@@ -38,7 +38,8 @@ input.button.expanded {
   background-color: #EFBB20;
   box-shadow: -3px -3px 5px $light-gray;
   color: $light-gray;
-  font-weight: 450;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .button.expanded {
   @include button(true, lighten(#EFBB20, 30%), auto, auto, solid);
