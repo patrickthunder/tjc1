@@ -37,9 +37,10 @@ input.button.expanded {
   border-radius: 2px;
   background-color: #EFBB20;
   box-shadow: -3px -3px 5px $light-gray;
-  color: $light-gray;
+  color: $white;
   font-weight: 500;
   letter-spacing: 1px;
+
 }
 .button.expanded {
   @include button(true, lighten(#EFBB20, 30%), auto, auto, solid);
