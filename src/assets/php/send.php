@@ -1,6 +1,5 @@
 <?php
-
-/* add if ajax function to php */
+// Add if ajax, function to php
 function is_ajax()
 {
     return isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&  $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest';
@@ -23,6 +22,7 @@ if (is_ajax()) {
     $body .= "Text:" . $textarea . " \r\n";
     $body .= "This request was made on TJC Website";
 
+          // mail to website owner, check if correct email
     $for = "patrickthunder@hotmail.com";
     $subject = "New Message From TJC Website!";
 
@@ -37,7 +37,3 @@ if (is_ajax()) {
 } else {
     die("NO!!!");
 }
-
-?>
-/* add in ajax function to php */
-/* code to run if ajax submit*/
