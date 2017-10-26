@@ -21,49 +21,56 @@ section.project {
 section.project-name {
   padding-top: rem-calc(80);
 }
+  /*Project Pages Hero Section*/
+
 .hero-section-a {
   background: url('../img/thevuehero.jpg') 50% no-repeat;
+    /*vue*/
   background-size: cover;
   height: 60vh;
+
 }
 .hero-section-b {
   background: url('../img/tc_hero.jpg') 50% no-repeat;
+      /*tc*/
   background-size: cover;
   height: 60vh;
 }
 .hero-section-c {
   background: url('../img/cranenight.jpg') 50% no-repeat;
+    /*broadstone*/
   background-size: cover;
   height: 60vh;
 }
 .hero-section-d {
   background: url('../img/cranenight.jpg') 50% no-repeat;
-  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+    /*vista*/
   background-size: cover;
   height: 60vh;
 }
 .hero-section-e {
   background: url('../img/cranenight.jpg') 50% no-repeat;
-  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  /*wol church*/
   background-size: cover;
   height: 60vh;
 }
 
 .hero-section-f {
   background: url('../img/cranenight.jpg') 50% no-repeat;
-  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+  /*mil fitness*/
   background-size: cover;
   height: 60vh;
 }
 .hero-section-g {
   background: url('../img/concretepour.jpg') 50% no-repeat;
-  /*background: url('../img/worksite_1.jpg') 50% no-repeat;*/
+    /*pac station*/
   background-size: cover;
   height: 60vh;
 }
 
 .hero-section-h {
   background: url('../img/concrete1.jpg') 50% no-repeat;
+    /*project 8*/
   background-size: cover;
   height: 60vh;
 }

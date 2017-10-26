@@ -6,46 +6,46 @@
   height: 200%;
   padding: rem-calc(40 20);
 
-
   address {
-      font-style: normal;
+    font-style: normal;
   }
 
   ul {
-  list-style-type: none;
-  font-size: 1.0rem;
-
-  @include breakpoint(small only) {
-    text-align: center;
+    list-style-type: none;
     font-size: 1.0rem;
-}
+    @include breakpoint(small only) {
+      text-align: center;
+      font-size: 1.0rem;
+    }
   }
 
   i.fa.fa-map-marker {
-  font-size: 1.2rem;
-  padding-right: rem-calc(5);
+    font-size: 1.2rem;
+    padding-right: rem-calc(5);
   }
 
-  .indent{
+  .indent {
     text-indent: rem-calc(20);
   }
+
   i.fa {
     color: lighten( $primary, 30% );
     padding-right: 5px;
     font-size: rem-calc(16);
-
   }
+
   h5 {
     font-size: rem-calc(18);
     @include breakpoint(small only) {
       text-align: center;
       font-size: rem-calc(19);
+    }
   }
 
-  }
   span {
     color: lighten( $primary, 30% );
   }
+
   p {
     font-size: rem-calc(15);
   }
