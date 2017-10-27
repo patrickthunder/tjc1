@@ -22,8 +22,8 @@ $('#contact-form')
   .on("invalid.zf.abide", function(ev,elem) {
     //add sweet alert function swal for error
     swal(
-      'Oops...',
-      'Something went wrong!',
+      'Please check form for errors...',
+      'Something is missing',
       'error'
     )
   })
@@ -43,7 +43,7 @@ $('#contact-form')
               console.log(response);
               swal(
                   response.message,
-                  'Thank you,' + response.name + ' For your interest in TJC',
+                  'Thank you, ' + response.name + ' for your interest in TJC',
                    'success'
               );
         }

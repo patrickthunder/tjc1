@@ -63,6 +63,7 @@
 @import 'util/util';
 $primary: #004e7e;
 $secondary: #767676;
+$buttoncolor: #EFBB20;
 // 1. Global
 // ---------
 
@@ -286,7 +287,7 @@ $button-font-family: inherit;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $buttoncolor;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
@@ -294,7 +295,7 @@ $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
-  small: 0.75rem,
+  small: 0.70rem,
   default: 0.9rem,
   large: 1.25rem,
 );

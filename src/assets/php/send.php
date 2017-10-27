@@ -20,7 +20,7 @@ if (is_ajax()) {
     $body .= "Company: " . $company ." \r\n";
     $body .= "Email:" . $email . " \r\n";
     $body .= "Text:" . $textarea . " \r\n";
-    $body .= "This request was made on TJC Website";
+    $body .= " A new request was sent on TJC's Website";
 
           // mail to website owner, check if correct email
     $for = "patrickthunder@hotmail.com";

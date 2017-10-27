@@ -57,7 +57,7 @@
   border-radius: 2%;
   margin-top: rem-calc(6);
   float: right;
-  background-color: #EFBB20;
+  background-color: $buttoncolor;
   line-height: rem-calc(20);
   text-align: center;
   padding: rem-calc(5 8);
@@ -78,7 +78,7 @@
   }
 }
 .main-gal .cptn .button:hover {
-    background-color: lighten( #EFBB20, 25% );
+    background-color: lighten( $buttoncolor, 25% );
     transition: 0.3s ease-in-out;
     color: black;
 }

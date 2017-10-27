@@ -10,15 +10,22 @@ $hero-height: 60vh;
   color: white;
 
   .button{
-    background-color: #EFBB20;
+    background-color: $buttoncolor;
     border-radius: 2px;
     color: $white;
     text-transform: uppercase;
     transition:0.5s ease-in-out;
     font-weight: normal;
-@include breakpoint(small) {
-  margin: 3px;
-}
+    @include breakpoint(small) {
+      padding:  rem-calc(9 5);
+    }
+    @include breakpoint(medium) {
+padding: $button-padding;
+    }
+    @include breakpoint(large) {
+padding: $button-padding;
+    }
+
     &:hover,
     &:active,
     &:focus {
