@@ -15,7 +15,7 @@
     font-size: 1.0rem;
     @include breakpoint(small only) {
       text-align: center;
-      font-size: 1.0rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -38,7 +38,7 @@
     font-size: rem-calc(18);
     @include breakpoint(small only) {
       text-align: center;
-      font-size: rem-calc(19);
+      font-size: rem-calc(16);
     }
   }
 

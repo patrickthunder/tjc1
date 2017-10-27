@@ -20,6 +20,10 @@
   font-weight: 400;
   padding: rem-calc(8 5);
   font-size: 1.1rem;
+  @include breakpoint(small only) {
+    height: 2.5rem;
+    font-size: 1.0rem;
+  }
 }
 
 .login-box-input:focus {

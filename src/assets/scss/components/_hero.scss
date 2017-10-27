@@ -11,14 +11,14 @@ $hero-height: 60vh;
 
   .button{
     background-color: #EFBB20;
-    margin: 2px;
     border-radius: 2px;
     color: $white;
-    line-spacing: 1px;
     text-transform: uppercase;
     transition:0.5s ease-in-out;
     font-weight: normal;
-
+@include breakpoint(small) {
+  margin: 3px;
+}
     &:hover,
     &:active,
     &:focus {
@@ -28,7 +28,6 @@ $hero-height: 60vh;
     }
   }
 }
-
 .hero-content {
   position: absolute;
   top: 50%;
