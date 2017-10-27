@@ -38,7 +38,8 @@ $hero-height: 60vh;
 }
 
 .hero-title {
-  line-height: 1.25rem;
+    // keep as em unit so it doesn's stack on itself
+  line-height: 1.25em;
   margin-bottom: 1rem;
 }
 
