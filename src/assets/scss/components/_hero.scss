@@ -18,12 +18,15 @@ $hero-height: 60vh;
     font-weight: normal;
     @include breakpoint(small) {
       padding:  rem-calc(9 5);
+      font-size: rem-calc(12);
+
     }
     @include breakpoint(medium) {
-padding: $button-padding;
+   padding: $button-padding;
     }
     @include breakpoint(large) {
-padding: $button-padding;
+ padding: $button-padding;
+ margin: 2px;
     }
 
     &:hover,
