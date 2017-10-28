@@ -5,13 +5,13 @@
   height: rem-calc(50);
 
   h5 {
-    padding: rem-calc(15 2);
+    padding: rem-calc(15 0);
     font-size: 0.8rem;
     margin-left: rem-calc(15);
     letter-spacing: 0.1px;
     margin-bottom: -2px;
     @include breakpoint(small only) {
-      font-size: rem-calc(13);
+      font-size: rem-calc(10);
     }
   }
 

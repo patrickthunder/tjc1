@@ -15,12 +15,12 @@ hr {
 
 .top-bar {
   color: $white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   width: 100%;
 
   h4 {
-    font-size: 1.0rem;
-    padding: rem-calc(3 10);
+    font-size: 0.8rem;
+    padding: rem-calc(3 8 3 10);
     margin-top: rem-calc(7);
     letter-spacing: 0.1px;
   }
@@ -46,7 +46,7 @@ hr {
   a:hover {
     color: $medium-light-gray;
     border-bottom: 1.0px solid $medium-light-gray;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       transition: 0.3s ease-in-out;
    }
 }
@@ -56,9 +56,10 @@ hr {
 .title-bar-title {
   font-weight: 400;
   letter-spacing: 0.1px;
-  padding: rem-calc(10 2);
+  padding: rem-calc(8 0);
   text-transform: uppercase;
   text-align: center;
+  font-size: rem-calc(14);
 
 }
 
@@ -80,7 +81,7 @@ hr {
 #off-canvas-nav-heading {
   color: lighten( $primary, 30% );
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 #off-canvas-nav-subheading {
   color: $white;

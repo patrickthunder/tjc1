@@ -27,12 +27,16 @@
 .main-gal .cptn {
   background: $dark-gray;
   width: 100%;
-  height: 25%;
-  bottom: -25%;
+  height: 19%;
+  bottom: -19%;
+  @include breakpoint(large) {
+    height: 20%;
+    bottom: -20%;
+  }
   position: absolute;
   left: 0;
   overflow: hidden;
-  padding: rem-calc(3 8);
+  padding: rem-calc(3 0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -40,11 +44,12 @@
 }
 
 .main-gal .cptn div {
-  float: left;
   height: 100%;
 }
 
 .main-gal .cptn .button {
+
+@include horizontal-center;
   -wibkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -52,50 +57,34 @@
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  -wibkit-border-radius: 2%;
-  -moz-border-radius: 2%;
-  border-radius: 2%;
-  margin-top: rem-calc(6);
-  float: right;
-  background-color: #EFBB20;
+
+  width: 100%;
+  background-color: $dark-gray;
   line-height: rem-calc(20);
   text-align: center;
-  padding: rem-calc(5 8);
+  padding: rem-calc(8 0 30 0);
   font-weight: 460;
   line-height: 1.28;
-  border-radius: rem-calc(2);
-  @include breakpoint(medium only) {
-    font-size: 1.4rem;
-  }
   @include breakpoint(small only) {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
+      padding: rem-calc(10 0 25 0);
   }
-  color: black;
+    @include breakpoint(medium only) {
+      font-size: 1.0rem;
+        padding: rem-calc(12 0 35 0);
+    }
+
+  color: $white;
 
   span {
-    margin-left: rem-calc(3);
-    color: black;
+    margin-left: rem-calc(4);
+    color: white;
   }
 }
 .main-gal .cptn .button:hover {
-    background-color: lighten( #EFBB20, 25% );
+    background-color: lighten( $dark-gray, 5% );
     transition: 0.3s ease-in-out;
-    color: black;
 }
-.main-gal .cptn h3 {
-  color: #fff;
-  margin-top: rem-calc(6);
-  margin-bottom: 0;
-  font-size: 1.0rem;
-  font-weight: normal;
-  @include breakpoint(medium only) {
-    font-size: 1.4rem;
-  }
-  @include breakpoint(small only) {
-    font-size: 1.3rem;
-  }
-}
-
 .main-gal:hover .cptn {
   bottom: 0;
 }
