@@ -26,7 +26,7 @@ $hero-height: 60vh;
     }
     @include breakpoint(large) {
  padding: $button-padding;
- margin: 2px;
+ margin: rem-calc(2);
     }
 
     &:hover,
