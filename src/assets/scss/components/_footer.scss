@@ -12,7 +12,7 @@
 
   ul {
     list-style-type: none;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     @include breakpoint(small only) {
       text-align: center;
       font-size: 0.8rem;
@@ -20,7 +20,7 @@
   }
 
   i.fa.fa-map-marker {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-right: rem-calc(5);
   }
 
@@ -31,13 +31,13 @@
   i.fa {
     color: lighten( $primary, 30% );
     padding-right: 5px;
-    font-size: rem-calc(16);
+    font-size: rem-calc(15);
   }
 
   h5 {
-    font-size: rem-calc(18);
+    font-size: rem-calc(17);
     @include breakpoint(medium) {
-      font-size: rem-calc(15);
+      font-size: rem-calc(16);
     }
     @include breakpoint(small only) {
       text-align: center;
