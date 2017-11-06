@@ -114,3 +114,37 @@ section.project-name {
     };
   }
 }
+
+
+/* reveal gallery pop-up modal  */
+.reveal {
+  button.close-button {color: $white;
+  }
+  @include breakpoint(small) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, top);
+    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @include breakpoint(medium) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, middle);
+    width: 70%;
+    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @include breakpoint(large) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, middle);
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .thumbnail {
+      @include flex;
+      @include flex-align(center, middle);
+    }
+  }
+}
