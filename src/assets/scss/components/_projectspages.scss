@@ -22,14 +22,14 @@ section.project-name {
   padding-top: rem-calc(80);
 }
   /*Project Pages Hero Section*/
-  /*vue*/
+    /*vue*/
 .hero-section-a {
   background: url('../img/project-page-gallery/hero/thevuehero.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 
 }
-      /*tc*/
+    /*tc*/
 .hero-section-b {
   background: url('../img/project-page-gallery/hero/tc_hero.jpg') 50% no-repeat;
   background-size: cover;
@@ -99,22 +99,30 @@ section.project-name {
 /*project galleries thumbnails flex box alignment*/
 .project-thumbs {
   background-color: $white;
-  margin: rem-calc(0);
 
   .cell {
-    padding: rem-calc(0);
+
     @include breakpoint(large) {
       @include flex;
       @include flex-align(center, middle);
-      margin: rem-calc(15 0);
+      margin: rem-calc(0 0);
+      padding-top: 20px;
+    };
+
+    @include breakpoint(medium) {
+      @include flex;
+      @include flex-align(center, middle);
+      margin: rem-calc(0 0);
     };
 
     @include breakpoint(small) {
       @include xy-grid-collapse();
+      @include flex;
+      @include flex-align(center, middle);
+      margin: rem-calc(20 0);
+    };
     };
   }
-}
-
 
 /* reveal gallery pop-up modal  */
 .reveal {
