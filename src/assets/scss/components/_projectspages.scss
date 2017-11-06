@@ -22,55 +22,52 @@ section.project-name {
   padding-top: rem-calc(80);
 }
   /*Project Pages Hero Section*/
-
+  /*vue*/
 .hero-section-a {
   background: url('../img/project-page-gallery/hero/thevuehero.jpg') 50% no-repeat;
-    /*vue*/
   background-size: cover;
   height: 60vh;
 
 }
+      /*tc*/
 .hero-section-b {
   background: url('../img/project-page-gallery/hero/tc_hero.jpg') 50% no-repeat;
-      /*tc*/
   background-size: cover;
   height: 60vh;
 }
+    /*broadstone*/
 .hero-section-c {
   background: url('../img/project-page-gallery/hero/bs_hero.jpg') 50% no-repeat;
-    /*broadstone*/
   background-size: cover;
   height: 60vh;
 }
-.hero-section-d {
-  background: url('../img/cranenight.jpg') 50% no-repeat;
     /*vista*/
+.hero-section-d {
+  background: url('../img/project-page-gallery/hero/vista_hero.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-.hero-section-e {
-  background: url('../img/cranenight.jpg') 50% no-repeat;
   /*wol church*/
+.hero-section-e {
+  background: url('../img/project-page-gallery/hero/church_hero.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-
-.hero-section-f {
-  background: url('../img/cranenight.jpg') 50% no-repeat;
   /*mil fitness*/
+.hero-section-f {
+  background: url('../img/project-page-gallery/hero/mfit_hero.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-.hero-section-g {
-  background: url('../img/concretepour.jpg') 50% no-repeat;
     /*pac station*/
+.hero-section-g {
+  background: url('../img/concrete1.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-
-.hero-section-h {
-  background: url('../img/concrete1.jpg') 50% no-repeat;
     /*project 8*/
+.hero-section-h {
+  background: url('../img/cranenight.jpg') 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
@@ -115,5 +112,39 @@ section.project-name {
     @include breakpoint(small) {
       @include xy-grid-collapse();
     };
+  }
+}
+
+
+/* reveal gallery pop-up modal  */
+.reveal {
+  button.close-button {color: $white;
+  }
+  @include breakpoint(small) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, top);
+    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @include breakpoint(medium) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, middle);
+    width: 70%;
+    padding-top: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @include breakpoint(large) {
+    @include horizontal-center;
+    @include flex;
+    @include flex-align(center, middle);
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .thumbnail {
+      @include flex;
+      @include flex-align(center, middle);
+    }
   }
 }
