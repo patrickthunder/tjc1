@@ -1,5 +1,5 @@
 /* hero section*/
-$hero-height: 60vh;
+$hero-height: 70vh;
 
 .hero {
   width: 100%;
@@ -15,7 +15,7 @@ h1{
   font-weight: 500;
     font-size: 2.6rem;
     @include breakpoint(small only) {
-      font-size: rem-calc(18);
+      font-size: rem-calc(16);
     }
 
 }
