@@ -112,14 +112,14 @@ section.project-name {
     @include breakpoint(medium) {
       @include flex;
       @include flex-align(center, middle);
-      margin: rem-calc(0 0);
+      margin: rem-calc(4 4);
     };
 
     @include breakpoint(small) {
       @include xy-grid-collapse();
       @include flex;
       @include flex-align(center, middle);
-      margin: rem-calc(20 0);
+      margin: rem-calc(2 2);
     };
     };
   }
