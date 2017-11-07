@@ -4,7 +4,7 @@
   <div class="medium-12 cell text-center">
     <h3 class="text-center">Contact Us</h3>
     <hr>
-      <h4>Tell us more about your next project</h4>
+    <h4>Tell us more about your next project</h4>
     <p>Providing proven expertise in structural concrete construction to Southern California</p>
     <br>
   </div>
@@ -23,42 +23,41 @@
       <br>
 
 
+      <!-- form area with abide-->
+      <!-- form input area with ajax and php, id is event listener-->
 
-<!-- form area with abide-->
-<!-- form input area with ajax and php, id is event listener-->
 
+      <form method="post" id="contact-form" action="assets/php/send.php" data-abide novalidate>
 
-<form method="post" id="contact-form" action="assets/php/send.php" data-abide novalidate>
-
-  <label>
+        <label>
       <input class="login-box-input" type="text" placeholder="Name" name="name" required>
         <span class="form-error">
           Please include your name
         </span>
       </label>
 
-  <label>
+        <label>
         <input class="login-box-input" type="text" placeholder="Company" name="company">
       </label>
 
-  <label>
+        <label>
         <input class="login-box-input" type="text" placeholder="Email" name="email" required pattern="email">
         <span class="form-error">
           Please include a valid email address
         </span>
       </label>
 
-  <label>
+        <label>
       <textarea placeholder="What can we do for your project?" class="login-box-input" name="textarea" required></textarea>
         <span class="form-error">
           Please tell us about your project and how we can help
         </span>
       </label>
 
-  <input type="submit" class="button expanded" value="Submit Form">
-</form>
+        <input type="submit" class="button expanded" value="Submit Form">
+      </form>
 
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
