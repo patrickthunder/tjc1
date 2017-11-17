@@ -158,21 +158,22 @@ section.partners {
  width: 100%;
  margin: 0 auto;
  margin-top: rem-calc(0);
- background-color: $dark-gray;
+ font-size: 1.2rem;
+ // background-color: $dark-gray;
 
    #partners-container-content {
      @include grid-row();
      color:$light-gray;
      padding: rem-calc(60) 0;
      a {
-       color:$light-gray !important;
+       color:blue !important;
        }
    .links {
      @include breakpoint(small) {
        @include grid-layout(2, '.link-column', $grid-column-gutter);
        }
      @include breakpoint(large) {
-       @include grid-layout(4, '.link-column', $grid-column-gutter);
+       @include grid-layout(3, '.link-column', $grid-column-gutter);
        }
 
      .link-column:not(:last-child) {
