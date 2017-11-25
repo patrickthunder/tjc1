@@ -171,7 +171,7 @@ section.partners {
        }
      @include breakpoint(medium) {
        @include grid-layout(3, '.link-column', $grid-column-gutter);
-        text-align: left;
+        text-align: center;
        }
    }
  }
