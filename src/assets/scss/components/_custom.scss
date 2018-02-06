@@ -1,5 +1,4 @@
 /* global style*/
-
 h3 {
   padding-bottom: rem-calc(7);
 }
@@ -26,7 +25,7 @@ hr {
   }
 
   span {
-    color: lighten( $primary, 30% );
+    color: lighten( $primary, 15% );
     background: $dark-gray;
     margin-right: rem-calc(5);
   }
@@ -64,7 +63,7 @@ hr {
 }
 
 .tblogo {
-  color: lighten( $primary, 30% );
+  color: lighten( $primary, 15% );
 }
 
 /*mobile nav sticky*/
@@ -79,7 +78,7 @@ hr {
 /* off canvas heading */
 
 #off-canvas-nav-heading {
-  color: lighten( $primary, 30% );
+  color: lighten( $primary, 15% );
   text-transform: uppercase;
   font-size: 1.1rem;
 }
@@ -101,25 +100,13 @@ div.off-canvas-nav-list {
 
   a:hover {
     background-color: lighten( $dark-gray, 3% );
-    color: lighten( $primary, 30% );
+    color: lighten( $primary, 15% );
     transition: 0.2s ease-in-out;
   }
 }
 /* who we are */
 
 #about {
-  padding: rem-calc(60 20);
-}
-/* our services */
-
-#services {
-  padding: rem-calc(60 20);
-}
-
-/* why us */
-
-.why-us {
-  background: $light-gray;
   padding: rem-calc(60 20);
 }
 
@@ -138,41 +125,4 @@ div.off-canvas-nav-list {
   .thumbnail {
     border:none;
   }
-}
-
-
-
-/* partners */
-section.partners {
-  background: $light-gray;
-  padding: rem-calc(60 0);
-}
-
-
-#partners-container {
- max-width: 100%;
- width: 100%;
- margin: 0 auto;
- margin-top: rem-calc(0);
- font-size: 1.2rem;
-
-
-   #partners-container-content {
-     @include grid-row();
-     color:$light-gray;
-     padding: rem-calc(60) 0;
-     a {
-       color:$primary !important;
-       }
-   .links {
-     @include breakpoint(small) {
-       @include grid-layout(1, '.link-column', $grid-column-gutter);
-       text-align: center;
-       }
-     @include breakpoint(medium) {
-       @include grid-layout(3, '.link-column', $grid-column-gutter);
-        text-align: center;
-       }
-   }
- }
 }
