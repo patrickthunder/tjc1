@@ -9,9 +9,7 @@ hr {
   margin-bottom: 2.5rem;
   width: 4rem;
 }
-
 /* top-bar nav */
-
 .top-bar {
   color: $white;
   font-size: 0.8rem;
@@ -25,13 +23,13 @@ hr {
   }
 
   span {
-    color: lighten( $primary, 15% );
+    color: lighten($primary, 15%);
     background: $dark-gray;
     margin-right: rem-calc(5);
   }
 
   ul {
-    padding-right: rem-calc(15)
+    padding-right: rem-calc(15);
   }
 
   li {
@@ -45,11 +43,10 @@ hr {
   a:hover {
     color: $medium-light-gray;
     border-bottom: 1.0px solid $medium-light-gray;
-      font-size: 0.8rem;
-      transition: 0.3s ease-in-out;
-   }
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
+  }
 }
-
 /* mobile nav and off canvas */
 /* title bar */
 .title-bar-title {
@@ -59,35 +56,30 @@ hr {
   text-transform: uppercase;
   text-align: center;
   font-size: rem-calc(14);
-
 }
 
 .tblogo {
-  color: lighten( $primary, 15% );
+  color: lighten($primary, 15%);
 }
-
 /*mobile nav sticky*/
-
 .title-bar {
   position: fixed;
   width: 100%;
   z-index: 1;
   padding-top: -10px;
 }
-
 /* off canvas heading */
-
 #off-canvas-nav-heading {
-  color: lighten( $primary, 15% );
+  color: lighten($primary, 15%);
   text-transform: uppercase;
   font-size: 1.1rem;
 }
+
 #off-canvas-nav-subheading {
   color: $white;
   font-size: 0.8rem;
 }
 /* off canvas navigation */
-
 div.off-canvas-nav-list {
   li {
     text-transform: uppercase;
@@ -99,19 +91,15 @@ div.off-canvas-nav-list {
   }
 
   a:hover {
-    background-color: lighten( $dark-gray, 3% );
-    color: lighten( $primary, 15% );
+    background-color: lighten($dark-gray, 3%);
+    color: lighten($primary, 15%);
     transition: 0.2s ease-in-out;
   }
 }
 /* who we are */
-
 #about {
   padding: rem-calc(60 20);
 }
-
-
-
 /* meet our team */
 /* team section and thumbnail */
 #team {
@@ -120,9 +108,9 @@ div.off-canvas-nav-list {
 
   div.media-object-section {
     padding: rem-calc(10);
-
   }
+
   .thumbnail {
-    border:none;
+    border: none;
   }
 }
