@@ -20,22 +20,18 @@ hr {
     font-size: 1.1rem;
     margin-top: rem-calc(7);
     letter-spacing: 0.1px;
-      font-weight: 420;
-
+    font-weight: 420;
   }
 
   span {
     color: lighten($primary, 9%);
     background: $dark-gray;
     margin-right: rem-calc(0);
-
   }
-
 
   ul:last-child {
     padding-right: rem-calc(5);
   }
-
 
   li {
     text-transform: uppercase;
@@ -52,15 +48,14 @@ hr {
     transition: 0.5s ease-in-out;
   }
 }
-
 /* logo image top-bar */
 .logo {
-  	width : 59px;
-  	height : 38px;
-    border:0;
-    float: left;
-    margin: rem-calc(12 0 0 5);
-    padding: rem-calc(0 0 0 10);
+  width: 59px;
+  height: 38px;
+  border: 0;
+  float: left;
+  margin: rem-calc(12 0 0 5);
+  padding: rem-calc(0 0 0 10);
 }
 
 /* mobile nav and off canvas */
@@ -77,6 +72,7 @@ hr {
 .tblogo {
   color: lighten($primary, 10%);
 }
+
 /*mobile nav sticky*/
 .title-bar {
   position: fixed;
@@ -89,21 +85,26 @@ hr {
   color: lighten($primary, 15%);
   text-transform: uppercase;
   font-size: 1.1rem;
+  float: right;
+  font-weight: 430;
+  margin: rem-calc(30 36 0 0)
+}
+
+.logo-nav {
+  width: 58px;
+  height: 35px;
+  border: 0;
+  margin: rem-calc(0);
+  padding: rem-calc(0 0 0 9);
 }
 
 #off-canvas-nav-subheading {
   color: $white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin: rem-calc(0 0 0 0);
+  padding: rem-calc(0 0 22 0);
 }
 
-.logo-nav {
-  	width : 59px;
-  	height : 38px;
-    border:0;
-
-    margin: rem-calc(12 0 0 5);
-    padding: rem-calc(0 0 0 10);
-}
 
 /* off canvas navigation */
 div.off-canvas-nav-list {
@@ -122,6 +123,18 @@ div.off-canvas-nav-list {
     transition: 0.2s ease-in-out;
   }
 }
+
+
+/* off canvas logo */
+
+.logo-nav {
+  width: 59px;
+  height: 38px;
+  border: 0;
+  margin: rem-calc(0 0 10 0)
+}
+
+
 /* who we are */
 #about {
   padding: rem-calc(60 20);
