@@ -12,25 +12,30 @@ hr {
 /* top-bar nav */
 .top-bar {
   color: $white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 400;
   width: 100%;
 
   h4 {
-    font-size: 0.8rem;
-    padding: rem-calc(3 8 3 10);
+    font-size: 1.1rem;
     margin-top: rem-calc(7);
     letter-spacing: 0.1px;
+      font-weight: 420;
+
   }
 
   span {
-    color: lighten($primary, 15%);
+    color: lighten($primary, 9%);
     background: $dark-gray;
-    margin-right: rem-calc(5);
+    margin-right: rem-calc(0);
+
   }
 
-  ul {
-    padding-right: rem-calc(15);
+
+  ul:last-child {
+    padding-right: rem-calc(5);
   }
+
 
   li {
     text-transform: uppercase;
@@ -42,11 +47,22 @@ hr {
 
   a:hover {
     color: $medium-light-gray;
-    border-bottom: 1.0px solid $medium-light-gray;
-    font-size: 0.8rem;
-    transition: 0.3s ease-in-out;
+    border-bottom: 0.5px solid $medium-gray;
+    font-size: 0.9rem;
+    transition: 0.5s ease-in-out;
   }
 }
+
+/* logo image top-bar */
+.logo {
+  	width : 59px;
+  	height : 38px;
+    border:0;
+    float: left;
+    margin: rem-calc(12 0 0 5);
+    padding: rem-calc(0 0 0 10);
+}
+
 /* mobile nav and off canvas */
 /* title bar */
 .title-bar-title {
@@ -59,7 +75,7 @@ hr {
 }
 
 .tblogo {
-  color: lighten($primary, 15%);
+  color: lighten($primary, 10%);
 }
 /*mobile nav sticky*/
 .title-bar {
@@ -79,6 +95,16 @@ hr {
   color: $white;
   font-size: 0.8rem;
 }
+
+.logo-nav {
+  	width : 59px;
+  	height : 38px;
+    border:0;
+
+    margin: rem-calc(12 0 0 5);
+    padding: rem-calc(0 0 0 10);
+}
+
 /* off canvas navigation */
 div.off-canvas-nav-list {
   li {
