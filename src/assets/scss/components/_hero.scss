@@ -31,17 +31,29 @@ h1{
 p {
   font-size: 1.5rem;
 }
+
+/* hero buttons cta */
+
+#hero-project-button {
+  background-color: $buttoncolor;
+}
+a #projects {
+  background-color: $buttoncolor;
+}
   .button{
-    color: $buttoncolor;
-    border-radius: 2px;
-    color: $white;
-    text-transform: uppercase;
-    transition:0.5s ease-in-out;
-    font-weight: normal;
+          background-color: Transparent;
+           background-repeat:no-repeat;
+           border: none;
+            border: 1.5px solid $buttoncolor;
+            border-radius: 1px;
+            color: $white;
+            text-transform: uppercase;
+          transition:0.5s ease-in-out;
+        font-weight: 450;
     @include breakpoint(small) {
-      padding:  rem-calc(8 8);
-      font-size: rem-calc(15);
-      margin: rem-calc(5);
+      padding:  rem-calc(8 5);
+      font-size: rem-calc(13);
+      margin: rem-calc(1);
     }
     @include breakpoint(medium) {
    padding: $button-padding;
@@ -55,9 +67,12 @@ p {
     &:hover,
     &:active,
     &:focus {
-    background: lighten($white, 5%);
-      transition: 0.5s ease-in-out;
       color: black;
+      background: lighten($white, 5%);
+      transition: 0.5s ease-in-out;
+      filter: grayscale(40%);
+        -webkit-filter: grayscale(40%);
+      opacity: 0.7;
     }
   }
 }

@@ -80,6 +80,7 @@ hr {
   width: 100%;
   z-index: 1;
   padding-top: -10px;
+
 }
 
 .top-bar-left
@@ -94,6 +95,7 @@ hr {
   float: right;
   font-weight: 430;
   margin: rem-calc(30 36 0 0)
+
 }
 
 .logo-nav {
@@ -107,8 +109,8 @@ hr {
 #off-canvas-nav-subheading {
   color: $white;
   font-size: 0.9rem;
-  margin: rem-calc(0 0 0 0);
-  padding: rem-calc(0 0 22 0);
+  margin: rem-calc(0 0 0 22);
+  padding: rem-calc(0 0 20 0);
 }
 
 
@@ -129,7 +131,6 @@ div.off-canvas-nav-list {
     transition: 0.2s ease-in-out;
   }
 }
-
 
 /* off canvas logo */
 
