@@ -9,6 +9,7 @@ hr {
   margin-bottom: 2.5rem;
   width: 4rem;
 }
+
 /* top-bar nav */
 .top-bar {
   color: $white;
@@ -30,7 +31,7 @@ hr {
   }
 
   ul:last-child {
-    padding-right: rem-calc(5);
+    padding-right: rem-calc(10);
   }
 
   li {
@@ -80,6 +81,11 @@ hr {
   z-index: 1;
   padding-top: -10px;
 }
+
+.top-bar-left
+  {
+    margin: rem-calc(0 0 0 8);
+  }
 /* off canvas heading */
 #off-canvas-nav-heading {
   color: lighten($primary, 15%);
