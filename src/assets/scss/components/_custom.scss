@@ -169,10 +169,8 @@ div.off-canvas-nav-list {
 }
 
 .bio{
-  // display: block;
-  margin-left: auto;
-  margin-right: auto;
-
+  @include flex;
+  @include flex-align(center, middle);
 }
 
 h2.bio-name {
@@ -183,7 +181,6 @@ h2.bio-name {
   @include breakpoint(large) {
     padding: rem-calc(0 50 20 225);
   }
-
 }
 
 .bio-right {
