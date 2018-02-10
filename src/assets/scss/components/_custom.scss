@@ -160,3 +160,31 @@ div.off-canvas-nav-list {
     border: none;
   }
 }
+
+#bio-photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.bio{
+  @include flex;
+  @include flex-align(center, middle);
+}
+
+h2.bio-name {
+  text-align: center;
+}
+
+.bio-left {
+  @include breakpoint(large) {
+    padding: rem-calc(0 50 20 225);
+  }
+}
+
+.bio-right {
+  @include breakpoint(large) {
+    padding: rem-calc(0 225 20 0);
+  }
+}
