@@ -1,90 +1,47 @@
 /* main page project events Image Mouseover and Buttons*/
+.main-gal {
+  position: relative;
+}
 
 .thumbnail {
-  border:none;
+  border: none;
+  z-index: 3;
 }
 
-.main-gal {
+h2.text-center {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: $white;
+  opacity: none;
+  z-index: 1;
+  @include breakpoint(large) {
+    padding: rem-calc(10 9);
+  };
+}
+
+.gal_description {
+  position: absolute;
+  bottom: 0;
+  /* position will be on bottom */
+  left: 0;
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  /* styling bellow */
+  background-color: $primary;
+  opacity: 0.8;
+  /* transparency */
+  filter:alpha(opacity=60);
+  /* IE transparency */
+  z-index: 2;
 }
-
+/* hover */
 .main-gal img {
   width: 100%;
-  left: 0;
-  bottom: 0;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.main-gal .cptn {
-  background: $dark-gray;
-  width: 100%;
-  height: 19%;
-  bottom: -19%;
-  @include breakpoint(large) {
-    height: 20%;
-    bottom: -20%;
-  }
-  position: absolute;
-  left: 0;
-  overflow: hidden;
-  padding: rem-calc(3 0);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.main-gal .cptn div {
-  height: 100%;
-}
-
-.main-gal .cptn .button {
-
-@include horizontal-center;
-  -wibkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-
-  width: 100%;
-  background-color: $dark-gray;
-  line-height: rem-calc(20);
-  text-align: center;
-  padding: rem-calc(8 0 30 0);
-  font-weight: 460;
-  line-height: 1.28;
-  @include breakpoint(small only) {
-    font-size: 1.0rem;
-      padding: rem-calc(8 0 28 0);
-  }
-    @include breakpoint(medium only) {
-      font-size: 1.0rem;
-        padding: rem-calc(12 0 35 0);
-    }
-
-  color: $white;
-
-  span {
-    margin-left: rem-calc(4);
-    color: white;
-  }
-}
-.main-gal .cptn .button:hover {
-    background-color: lighten( $dark-gray, 5% );
-    transition: 0.3s ease-in-out;
-}
-.main-gal:hover .cptn {
-  bottom: 0;
+.main-gal img:hover {
+  filter: grayscale(40%);
+  -webkit-filter: grayscale(40%);
+  opacity: 0.7;
 }
