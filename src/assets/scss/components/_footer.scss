@@ -35,21 +35,39 @@
   }
 
   h5 {
-    font-size: rem-calc(17);
-    @include breakpoint(medium) {
-      font-size: rem-calc(16);
+
+    margin: rem-calc(12 0 0 0);
+    @include breakpoint(large) {
+      font-size: rem-calc(18);
+
+    }
+    @include breakpoint(medium only) {
+      font-size: rem-calc(15);
+      overflow: hidden;
     }
     @include breakpoint(small only) {
       text-align: center;
       font-size: rem-calc(16);
+      padding-bottom: 15px;
     }
   }
 
   span {
-    color: lighten( $primary, 30% );
+    color: lighten( $primary, 12% );
+
   }
+
 
   p {
     font-size: rem-calc(15);
   }
+}
+
+.logo-footer {
+  width: 74px;
+  height: 53px;
+  border: 0;
+  float: left;
+  margin: rem-calc(0 0 0 8);
+  padding: rem-calc(0 2 0 0);
 }

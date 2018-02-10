@@ -1,13 +1,9 @@
 /*Projects Pages*/
-
 /* current projects Main Page */
-
 #current-p {
   padding: rem-calc(60 0);
   background-color: $white;
-
 }
-
 /*Projects Hero Section On Individual Projects Pages*/
 section.project {
   padding: rem-calc(40 25);
@@ -21,60 +17,59 @@ section.project {
 section.project-name {
   padding-top: rem-calc(80);
 }
-  /*Project Pages Hero Section*/
-    /*vue*/
+/*Project Pages Hero Section*/
+/*vue*/
 .hero-section-a {
-  background: url('../img/project-page-gallery/hero/thevuehero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/thevuehero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
-
 }
-    /*tc*/
+/*tc*/
 .hero-section-b {
-  background: url('../img/project-page-gallery/hero/tc_hero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/tc_hero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-    /*broadstone*/
+/*broadstone*/
 .hero-section-c {
-  background: url('../img/project-page-gallery/hero/bs_hero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/bs_hero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-    /*vista*/
+/*vista*/
 .hero-section-d {
-  background: url('../img/project-page-gallery/hero/vista_hero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/vista_hero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-  /*wol church*/
+/*wol church*/
 .hero-section-e {
-  background: url('../img/project-page-gallery/hero/church_hero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/church_hero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-  /*mil fitness*/
+/*mil fitness*/
 .hero-section-f {
-  background: url('../img/project-page-gallery/hero/mfit_hero.jpg') 50% no-repeat;
+  background: url("../img/project-page-gallery/hero/mfit_hero.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-    /*pac station*/
+/*pac station*/
 .hero-section-g {
-  background: url('../img/concrete1.jpg') 50% no-repeat;
+  background: url("../img/concrete1.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-    /*project 8*/
+/*project 8*/
 .hero-section-h {
-  background: url('../img/cranenight.jpg') 50% no-repeat;
+  background: url("../img/cranenight.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
 }
-
 /*project breadcrumbs*/
 .navbc {
   padding-left: rem-calc(20);
+
   .breadcrumbs {
     color: $black;
     text-transform: uppercase;
@@ -92,41 +87,47 @@ section.project-name {
     font-size: 1.2rem;
   }
 }
+
 .project-overview {
   padding: rem-calc(0 10);
 }
-
 /*project galleries thumbnails flex box alignment*/
 .project-thumbs {
   background-color: $white;
 
   .cell {
-
     @include breakpoint(large) {
       @include flex;
       @include flex-align(center, middle);
       margin: rem-calc(0 0);
       padding-top: 20px;
     };
-
     @include breakpoint(medium) {
       @include flex;
       @include flex-align(center, middle);
       margin: rem-calc(4 4);
     };
-
     @include breakpoint(small) {
       @include xy-grid-collapse();
       @include flex;
       @include flex-align(center, middle);
       margin: rem-calc(2 2);
     };
-    };
-  }
+  };
+}
+/* project thumbs hover */
 
+.project-thumbs .cell:hover {
+  filter: grayscale(40%);
+  -webkit-filter: grayscale(40%);
+  opacity: 0.7;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
 /* reveal gallery pop-up modal  */
 .reveal {
-  button.close-button {color: $white;
+  button.close-button {
+    color: $white;
   }
   @include breakpoint(small) {
     @include horizontal-center;
