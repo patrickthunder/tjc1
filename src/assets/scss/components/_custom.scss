@@ -161,30 +161,34 @@ div.off-canvas-nav-list {
   }
 }
 
-#bio-photo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+// .bio{
+//   @include flex;
+//   @include flex-align(center, middle);
+// }
 
-}
-
-.bio{
+#bio-photo {
   @include flex;
   @include flex-align(center, middle);
+  @include breakpoint(large) {
+    background-color: $light-gray;
+  }
 }
 
-h2.bio-name {
+h3.bio-name {
   text-align: center;
+  padding: rem-calc(20 0 0 0);
 }
 
 .bio-left {
   @include breakpoint(large) {
-    padding: rem-calc(0 50 20 225);
+    padding: rem-calc(0 50 20 100);
+    text-align: justify;
   }
 }
 
 .bio-right {
   @include breakpoint(large) {
-    padding: rem-calc(0 225 20 0);
+    padding: rem-calc(0 100 20 0);
+    text-align: justify;
   }
 }
