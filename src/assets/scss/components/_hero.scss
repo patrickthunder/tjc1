@@ -53,8 +53,8 @@ a #projects {
           transition:0.5s ease-in-out;
         font-weight: 450;
     @include breakpoint(small) {
-      padding:  rem-calc(8 5);
-      font-size: rem-calc(13);
+      padding:  rem-calc(8 4);
+      font-size: rem-calc(12);
       margin: rem-calc(1);
     }
     @include breakpoint(medium) {
@@ -75,7 +75,7 @@ a #projects {
       filter: grayscale(40%);
         -webkit-filter: grayscale(40%);
       opacity: 0.7;
-    
+
   }
 }
 .hero-content {
