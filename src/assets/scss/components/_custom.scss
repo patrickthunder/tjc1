@@ -19,13 +19,14 @@ hr {
 
   h4 {
     font-size: 1.1rem;
+    font-family: Helvetica, Roboto, Arial, sans-serif;
     margin-top: rem-calc(7);
     letter-spacing: 0.1px;
     font-weight: 420;
   }
 
   span {
-    color: lighten($primary, 9%);
+    color: lighten($primary, 20%);
     background: $dark-gray;
     margin-right: rem-calc(0);
   }
@@ -71,7 +72,7 @@ hr {
 }
 
 .tblogo {
-  color: lighten($primary, 12%);
+  color: lighten($primary, 20%);
 }
 
 /*mobile nav sticky*/
@@ -80,7 +81,7 @@ hr {
   width: 100%;
   z-index: 3;
   padding-top: -10px;
-
+font-family: Helvetica, Roboto, Arial, sans-serif;
 }
 
 .top-bar-left
@@ -94,7 +95,8 @@ hr {
     }
 /* off canvas heading */
 #off-canvas-nav-heading {
-  color: lighten($primary, 12%);
+  color: lighten($primary, 20%);
+  font-family: Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.1rem;
   float: right;
@@ -132,7 +134,7 @@ div.off-canvas-nav-list {
 
   a:hover {
     background-color: lighten($dark-gray, 3%);
-    color: lighten($primary, 15%);
+    color: lighten($primary, 18%);
     transition: 0.2s ease-in-out;
   }
 }

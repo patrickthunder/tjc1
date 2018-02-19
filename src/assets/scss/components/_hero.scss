@@ -8,29 +8,44 @@ $hero-height: 100vh;
   background: $dark-gray;
   position: relative;
   color: $white;
-
-h1{
-  color: lighten( $primary, 15% );
-  text-transform: uppercase;
-  font-weight: 500;
-    font-size: 2.8rem;
-    @include breakpoint(small only) {
-      font-size: rem-calc(25);
-    }
 }
+
+.hero h1{
+  color: $primary;
+  background-color: $light-gray;
+  border: 2px solid $primary;
+  text-align: right;
+  text-transform: uppercase;
+  padding: rem-calc(10 15 3 0);
+margin: rem-calc(0 0 85 20);
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 550;
+    font-size: 2.3rem;
+    @include breakpoint(small only) {
+      font-size: rem-calc(30);
+        color: white;
+        text-align: center;
+        margin: rem-calc(0 0 50 0);
+        background-color: transparent;
+        border: none;
+    }
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding: rem-calc(0 0 15 0);
+  @include breakpoint(small only) {
+    font-size: rem-calc(20);
+  }
 }
 
 .logo-hero {
-  width: 74px;
-  height: 53px;
+  width: 104px;
+  height: 83px;
   border: 0;
   float: left;
-  margin: rem-calc(0 0 0 8);
-  padding: rem-calc(0 2 0 0);
+  margin: rem-calc(10 0 0 25);
+  padding: rem-calc(0 0 2 0);
 }
 
 
