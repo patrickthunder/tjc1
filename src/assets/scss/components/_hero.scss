@@ -10,89 +10,82 @@ $hero-height: 100vh;
   color: $white;
 }
 
-.hero h1{
-  color: $primary;
-  background-color: $light-gray;
-  border: 2px solid $primary;
+.hero h1 {
+  color: $white;
+  border-right: $white solid 2px;
   text-align: right;
   text-transform: uppercase;
-  padding: rem-calc(10 15 3 0);
-margin: rem-calc(0 0 85 20);
+  padding: rem-calc(0 25 0 0);
+  margin: rem-calc(0 20 60 20);
   font-family: Helvetica, Roboto, Arial, sans-serif;
-  font-weight: 550;
-    font-size: 2.3rem;
-    @include breakpoint(small only) {
-      font-size: rem-calc(30);
-        color: white;
-        text-align: center;
-        margin: rem-calc(0 0 50 0);
-        background-color: transparent;
-        border: none;
-    }
-}
-
-p {
-  font-size: 1.6rem;
-  padding: rem-calc(0 0 15 0);
+  font-weight: 600;
+  font-size: 4.8rem;
   @include breakpoint(small only) {
-    font-size: rem-calc(20);
+    font-size: rem-calc(48);
+    color: white;
+    margin: rem-calc(0 0 25 0);
+    padding: rem-calc(0 15 0 0);
+    text-align: right;
   }
 }
 
-.logo-hero {
-  width: 104px;
-  height: 83px;
-  border: 0;
-  float: left;
-  margin: rem-calc(10 0 0 25);
-  padding: rem-calc(0 0 2 0);
+.hero p {
+  font-size: 2.2rem;
+  padding: rem-calc(0 0 25 0);
+  font-weight: 470;
+  @include breakpoint(medium only) {
+    font-size: 2.0rem;
+  }
+  @include breakpoint(small only) {
+    font-size: rem-calc(24);
+    font-weight: 420;
+  }
 }
-
-
 /* hero buttons cta */
-
 #hero-project-button {
   background-color: $buttoncolor;
 }
+
 a #projects {
   background-color: $buttoncolor;
 }
-  .button{
-          background-color: Transparent;
-           background-repeat:no-repeat;
-           border: none;
-            border: 1.5px solid $buttoncolor;
-            border-radius: 1px;
-            color: $white;
-            text-transform: uppercase;
-          transition:0.5s ease-in-out;
-        font-weight: 450;
-    @include breakpoint(small) {
-      padding:  rem-calc(8 4);
-      font-size: rem-calc(12);
-      margin: rem-calc(1);
-    }
-    @include breakpoint(medium) {
-   padding: $button-padding;
-   margin: rem-calc(5);
-    }
-    @include breakpoint(large) {
- padding: $button-padding;
- margin: rem-calc(5);
-    }
 
-    &:hover,
-    &:active,
-    &:focus {
-      color: black;
-      background: lighten($white, 5%);
-      transition: 0.5s ease-in-out;
-      filter: grayscale(40%);
-        -webkit-filter: grayscale(40%);
-      opacity: 0.7;
+.button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  border: 1.5px solid $buttoncolor;
+  border-radius: 1px;
+  color: $white;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  font-weight: 450;
+  @include breakpoint(small) {
+    padding: rem-calc(8 4);
+    font-size: rem-calc(12);
+    margin: rem-calc(1);
+  }
+  @include breakpoint(medium) {
+    padding: $button-padding;
+    margin: rem-calc(5);
+  }
+  @include breakpoint(large) {
+    padding: $button-padding;
+    margin: rem-calc(5);
+  }
 
+  &:active,
+  &:focus,
+  &:hover {
+    color: black;
+    background: lighten($white, 5%);
+    transition: 0.5s ease-in-out;
+    filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+    opacity: 0.7;
   }
 }
+
 .hero-content {
   position: absolute;
   top: 50%;
@@ -102,7 +95,7 @@ a #projects {
 }
 
 .hero-title {
-    // keep as em unit so it doesn's stack on itself
+  // keep as em unit so it doesn's stack on itself
   line-height: 1.25em;
   margin-bottom: 1.8rem;
 }
@@ -113,11 +106,9 @@ a #projects {
 
 .hero-bg-image {
   overflow: hidden;
-  background: url('../img/hero.jpg') 50% no-repeat;
+  background: url("../img/hero.jpg") 50% no-repeat;
   background-position: center center;
   background-size: cover;
-
-
   /*overlay*/
   &:before {
     content: '';
@@ -128,5 +119,4 @@ a #projects {
     position: relative;
   }
 }
-
 /* end hero */

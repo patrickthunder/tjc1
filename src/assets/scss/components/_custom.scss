@@ -19,14 +19,13 @@ hr {
 
   h4 {
     font-size: 1.1rem;
-    font-family: Helvetica, Roboto, Arial, sans-serif;
     margin-top: rem-calc(7);
     letter-spacing: 0.1px;
     font-weight: 420;
   }
 
   span {
-    color: lighten($primary, 20%);
+    color: lighten($primary, 9%);
     background: $dark-gray;
     margin-right: rem-calc(0);
   }
@@ -72,7 +71,7 @@ hr {
 }
 
 .tblogo {
-  color: lighten($primary, 20%);
+  color: lighten($primary, 12%);
 }
 
 /*mobile nav sticky*/
@@ -81,7 +80,7 @@ hr {
   width: 100%;
   z-index: 3;
   padding-top: -10px;
-font-family: Helvetica, Roboto, Arial, sans-serif;
+
 }
 
 .top-bar-left
@@ -95,8 +94,7 @@ font-family: Helvetica, Roboto, Arial, sans-serif;
     }
 /* off canvas heading */
 #off-canvas-nav-heading {
-  color: lighten($primary, 20%);
-  font-family: Helvetica, Roboto, Arial, sans-serif;
+  color: lighten($primary, 12%);
   text-transform: uppercase;
   font-size: 1.1rem;
   float: right;
@@ -134,7 +132,7 @@ div.off-canvas-nav-list {
 
   a:hover {
     background-color: lighten($dark-gray, 3%);
-    color: lighten($primary, 18%);
+    color: lighten($primary, 15%);
     transition: 0.2s ease-in-out;
   }
 }
@@ -151,7 +149,7 @@ div.off-canvas-nav-list {
 /* about section */
 #about {
   padding: rem-calc(60 20);
-background: linear-gradient(to right bottom, #002740 1%, $primary 68%);
+background: linear-gradient(to right top, #002740 15%, $primary 62%);
 
   h3 {
       color: $white;
@@ -159,12 +157,14 @@ background: linear-gradient(to right bottom, #002740 1%, $primary 68%);
 
   h4 {
     color: $light-gray;
-      font-size: rem-calc(20);
-      font-weight: 420;
+      font-size: rem-calc(23);
+      font-weight: 440;
       @include breakpoint(small only) {
         text-align: center;
         padding-bottom: 5px;
-        font-size: rem-calc(18);
+        font-size: rem-calc(20);
+        font-weight: 420;
+
       }
 
   }
