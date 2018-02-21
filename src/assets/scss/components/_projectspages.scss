@@ -105,18 +105,17 @@ section.project-name {
     @include breakpoint(medium) {
       @include flex;
       @include flex-align(center, middle);
-      margin: rem-calc(4 4);
+      margin: rem-calc(10 8);
     };
     @include breakpoint(small) {
       @include xy-grid-collapse();
       @include flex;
       @include flex-align(center, middle);
-      margin: rem-calc(2 2);
+      margin: rem-calc(10 5);
     };
   };
 }
 /* project thumbs hover */
-
 .project-thumbs .cell:hover {
   filter: grayscale(40%);
   -webkit-filter: grayscale(40%);

@@ -2,7 +2,8 @@
 
 .site-footer {
   background: #2C353D;
-  color: white;
+
+font-family: Helvetica, Roboto, Arial, sans-serif;
   height: 200%;
   padding: rem-calc(40 20);
 
@@ -13,6 +14,9 @@
   ul {
     list-style-type: none;
     font-size: 0.9rem;
+    li {
+      color: white;
+    }
     @include breakpoint(small only) {
       text-align: center;
       font-size: 0.8rem;
@@ -29,13 +33,13 @@
   }
 
   i.fa {
-    color: lighten( $primary, 30% );
+    color: lighten( $primary, 20% );
     padding-right: 5px;
     font-size: rem-calc(15);
   }
 
   h5 {
-
+    color: white;
     margin: rem-calc(12 0 0 0);
     @include breakpoint(large) {
       font-size: rem-calc(18);
@@ -53,7 +57,7 @@
   }
 
   span {
-    color: lighten( $primary, 12% );
+    color: lighten( $primary, 20% );
 
   }
 
