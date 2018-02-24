@@ -67,15 +67,23 @@ section.project-name {
   height: 60vh;
 }
 /*project breadcrumbs*/
-.navbc {
-  padding-left: rem-calc(20);
 
-  .breadcrumbs {
-    color: $black;
-    text-transform: uppercase;
-    font-size: rem-calc(11);
-  }
+.navbc li{
+  padding: rem-calc(1 0);
+  margin: rem-calc(0 1 4 5);
+  font-size: rem-calc(13);
+  font-weight: 450;
 }
+
+
+.breadcrumbs {
+  color: $black;
+  text-transform: uppercase;
+  font-size: rem-calc(13);
+  font-weight: 450;
+  margin-top: 5px;
+}
+
 /*project spec and icons and overview*/
 .project-spec {
   padding: rem-calc(0 10);
