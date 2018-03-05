@@ -103,6 +103,8 @@ section.project-name {
 .project-thumbs {
   background-color: $white;
 
+  z-index: -1;
+
   .cell {
     @include breakpoint(large) {
       @include flex;
@@ -120,6 +122,7 @@ section.project-name {
       @include flex;
       @include flex-align(center, middle);
       margin: rem-calc(10 5);
+
     };
   };
 }
